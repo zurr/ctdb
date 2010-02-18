@@ -16,7 +16,7 @@ UPDATE `creature_template` SET `unit_class`=2 WHERE `entry`=37025;
 UPDATE `creature_template` SET `unit_class`=1 WHERE `entry`=37665;
 
 -- Eragon
--- Argent Tournament (Pennant and DND)
+-- Argent Tournament (Pennant, DND and gameobjects)
 DELETE FROM `creature_template_addon` WHERE `entry`= 33272 ;
 INSERT INTO `creature_template_addon` (`entry`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES (33272, 0, 0, 0, 0, 0, '64100 0');
 DELETE FROM `creature_template_addon` WHERE `entry`= 33225 ;
@@ -57,6 +57,26 @@ DELETE FROM `creature_template_addon` WHERE (`entry`=36066);
 INSERT INTO `creature_template_addon` (`entry`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES (36066, 0, 0, 0, 1, 93, '68342 0');
 DELETE FROM `creature_template_addon` WHERE (`entry`=36065);
 INSERT INTO `creature_template_addon` (`entry`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES (36065, 0, 0, 0, 1, 93, '68342 0');
+DELETE FROM `gameobject_template` WHERE `entry` = 195214 ;
+INSERT INTO `gameobject_template` (`entry`, `type`, `displayId`, `name`, `IconName`, `castBarCaption`, `unk1`, `faction`, `flags`, `size`, `questItem1`, `questItem2`, `questItem3`, `questItem4`, `questItem5`, `questItem6`, `data0`, `data1`, `data2`, `data3`, `data4`, `data5`, `data6`, `data7`, `data8`, `data9`, `data10`, `data11`, `data12`, `data13`, `data14`, `data15`, `data16`, `data17`, `data18`, `data19`, `data20`, `data21`, `data22`, `data23`, `ScriptName`) VALUES (195214, 10, 8235, 'Large Kobold Cage', '', '', '', 14, 0, 1.2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '');
+DELETE FROM `gameobject` WHERE `id`=195214;
+INSERT INTO `gameobject` (`guid`,`id`,`map`,`spawnMask`,`phaseMask`,`position_x`,`position_y`,`position_z`,`orientation`,`rotation0`,`rotation1`,`rotation2`,`rotation3`,`spawntimesecs`,`animprogress`,`state`) VALUES
+(199990, 195214, 571, 1, 1, 8410.1, 755.925, 548.771, 2.87979, 0, 0, 0, 1, 180, 255, 1),
+(199991, 195214, 571, 1, 1, 8407.86, 762.535, 549.657, -2.77507, 0, 0, 0, 1, 180, 255, 1);
+DELETE FROM `gameobject_template` WHERE `entry` = 195213 ;
+INSERT INTO `gameobject_template` (`entry`, `type`, `displayId`, `name`, `IconName`, `castBarCaption`, `unk1`, `faction`, `flags`, `size`, `questItem1`, `questItem2`, `questItem3`, `questItem4`, `questItem5`, `questItem6`, `data0`, `data1`, `data2`, `data3`, `data4`, `data5`, `data6`, `data7`, `data8`, `data9`, `data10`, `data11`, `data12`, `data13`, `data14`, `data15`, `data16`, `data17`, `data18`, `data19`, `data20`, `data21`, `data22`, `data23`, `ScriptName`) VALUES (195213, 5, 8235, 'Small Coliseum Cage', '', '', '', 0, 0, 0.6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '');
+DELETE FROM `gameobject` WHERE `id`=195213;
+INSERT INTO `gameobject` (`guid`,`id`,`map`,`spawnMask`,`phaseMask`,`position_x`,`position_y`,`position_z`,`orientation`,`rotation0`,`rotation1`,`rotation2`,`rotation3`,`spawntimesecs`,`animprogress`,`state`) VALUES
+(1999992, 195213, 571, 1, 1, 8404.91, 767.523, 550.424, -2.44346, 0, 0, 0, 1, 180, 255, 1),
+(1999993, 195213, 571, 1, 1, 8401.93, 771.163, 549.79, -3.00195, 0, 0, 0, 1, 180, 255, 1),
+(1999994, 195213, 571, 1, 1, 8406.55, 770.34, 550.845, -3.00195, 0, 0, 0, 1, 180, 255, 1);
+DELETE FROM `creature` WHERE `id`= 35482 ;
+INSERT INTO `creature` (`guid`,`id`,`map`,`spawnMask`,`phaseMask`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES
+(127570, 35482, 571, 1, 1, 24892, 0, 8431.46, 1041.08, 552.533, 4.86947, 180, 0, 0, 1, 0, 0, 0),
+(127580, 35482, 571, 1, 1, 29878, 0, 8420.46, 1037.24, 552.607, 5.86431, 180, 0, 0, 1, 0, 0, 0),
+(199990, 35482, 571, 1, 1, 29878, 0, 8420.69, 1027.25, 550.42, 0.331613, 180, 0, 0, 1, 0, 0, 0);
+DELETE FROM `creature_template_addon` WHERE `entry`= 33243 ;
+INSERT INTO `creature_template_addon` (`entry`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES (33243, 0, 0, 0, 0, 0, '64101 0 62719 0 63132 0');
 
 -- Valiance Keep (Wrong spawns and added mount)
 DELETE FROM `creature` WHERE `guid` IN (103697,110384,110388,110385,110391,110386,108622,110383,103698) ;
