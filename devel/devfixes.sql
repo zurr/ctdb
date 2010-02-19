@@ -16,7 +16,58 @@ UPDATE `creature_template` SET `unit_class`=2 WHERE `entry`=37025;
 UPDATE `creature_template` SET `unit_class`=1 WHERE `entry`=37665;
 
 -- Eragon
--- Argent Tournament (Pennant, DND and gameobjects)
+-- Argent Tournament (npc_text in Argent Tournament [In process, not finished])
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (136659,14787);
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (136649,14804),(136650,14804),(136651,14804),(136652,14804),(136653,14804),(136654,14804),(136655,14804),(136656,14804),(136657,14804),(136658,14804);
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (129932,14793);
+UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33593 ;
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127388,14395);
+UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33592 ;
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127392,14399);
+UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33225 ;
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127396,14359);
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127582,13584);
+UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33625 ;
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127399,14379);
+UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33312 ;
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127404,14396);
+UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33335 ;
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127407,14398);
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (129808,14760);
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127620,14759);
+UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33746 ;
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127603,14384);
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127604,14384);
+UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33740 ;
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127605,14384);
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127606,14384);
+UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33743 ;
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127607,14384);
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127608,14384);
+UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33747 ;
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127609,14384);
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127610,14384);
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127480,13584);
+UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33738 ;
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127612,14384);
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127611,14384);
+UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33739 ;
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127593,14384);
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127594,14384);
+UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33749 ;
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127595,14384);
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127596,14384);
+UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33745 ;
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127597,14384);
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127598,14384);
+UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33744 ;
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127599,14384);
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127600,14384);
+UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33748 ;
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127601,14384);
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127602,14384);
+
+-- Argent Tournament (Pennant, DND, gameobjects)
 DELETE FROM `creature_template_addon` WHERE `entry`= 33272 ;
 INSERT INTO `creature_template_addon` (`entry`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES (33272, 0, 0, 0, 0, 0, '64100 0');
 DELETE FROM `creature_template_addon` WHERE `entry`= 33225 ;
