@@ -14,6 +14,7 @@ UPDATE `creature_template` SET `unit_class`=8 WHERE `entry`=35041;
 UPDATE `creature_template` SET `unit_class`=8 WHERE `entry`=35052;
 UPDATE `creature_template` SET `unit_class`=2 WHERE `entry`=37025;
 UPDATE `creature_template` SET `unit_class`=1 WHERE `entry`=37665;
+-- / Spyder
 
 -- Eragon
 -- Argent Tournament (npc_text in Argent Tournament [In process, not finished])
@@ -66,8 +67,9 @@ INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127600,14384);
 UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33748 ;
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127601,14384);
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127602,14384);
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (129939,13584);
 
--- Argent Tournament (Pennant, DND, gameobjects)
+-- Argent Tournament (Pennant,DND, gameobjects)
 DELETE FROM `creature_template_addon` WHERE `entry`= 33272 ;
 INSERT INTO `creature_template_addon` (`entry`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES (33272, 0, 0, 0, 0, 0, '64100 0');
 DELETE FROM `creature_template_addon` WHERE `entry`= 33225 ;
@@ -128,6 +130,82 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`spawnMask`,`phaseMask`,`modelid`,`equ
 (199990, 35482, 571, 1, 1, 29878, 0, 8420.69, 1027.25, 550.42, 0.331613, 180, 0, 0, 1, 0, 0, 0);
 DELETE FROM `creature_template_addon` WHERE `entry`= 33243 ;
 INSERT INTO `creature_template_addon` (`entry`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES (33243, 0, 0, 0, 0, 0, '64101 0 62719 0 63132 0');
+DELETE FROM `creature_addon` WHERE `guid` = 127603;
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES
+(127603, 0, 29262, 0, 1, 0, '63403 0 62852 0 64723 0');
+DELETE FROM `creature_addon` WHERE `guid` = 127604;
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES
+(127604, 0, 29262, 0, 1, 0, '63403 0 62852 0 64723 0');
+DELETE FROM `creature_addon` WHERE `guid` = 127605;
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES
+(127605, 0, 28571, 0, 1, 0, '63396 0 62852 0 64723 0');
+DELETE FROM `creature_addon` WHERE `guid` = 127606;
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES
+(127606, 0, 28571, 0, 1, 0, '63396 0 62852 0 64723 0');
+DELETE FROM `creature_addon` WHERE `guid` = 127607;
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES
+(127607, 0, 29258, 0, 1, 0, '63427 0 62852 0 64723 0');
+DELETE FROM `creature_addon` WHERE `guid` = 127608;
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES
+(127608, 0, 29258, 0, 1, 0, '63427 0 62852 0 64723 0');
+DELETE FROM `creature_addon` WHERE `guid` = 127609;
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES
+(127609, 0, 28912, 0, 1, 0, '62594 0 62852 0 64723 0');
+DELETE FROM `creature_addon` WHERE `guid` = 127610;
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES
+(127610, 0, 28912, 0, 1, 0, '62594 0 62852 0 64723 0');
+DELETE FROM `creature_addon` WHERE `guid` = 127612;
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES
+(127612, 0, 29256, 0, 1, 0, '63406 0 62852 0 64723 0');
+DELETE FROM `creature_addon` WHERE `guid` = 127611;
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES
+(127611, 0, 29256, 0, 1, 0, '63406 0 62852 0 64723 0');
+DELETE FROM `creature_addon` WHERE `guid` = 127593;
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES
+(127593, 0, 29255, 0, 1, 0, '63423 0 62852 0 64723 0');
+DELETE FROM `creature_addon` WHERE `guid` = 127594;
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES
+(127594, 0, 29255, 0, 1, 0, '63423 0 62852 0 64723 0');
+DELETE FROM `creature_addon` WHERE `guid` = 127595;
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES
+(127595, 0, 29257, 0, 1, 0, '63430 0 62852 0 64723 0');
+DELETE FROM `creature_addon` WHERE `guid` = 127596;
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES
+(127596, 0, 29257, 0, 1, 0, '63430 0 62852 0 64723 0');
+DELETE FROM `creature_addon` WHERE `guid` = 127597;
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES
+(127597, 0, 29261, 0, 1, 0, '63399 0 62852 0 64723 0');
+DELETE FROM `creature_addon` WHERE `guid` = 127598;
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES
+(127598, 0, 29261, 0, 1, 0, '63399 0 62852 0 64723 0');
+DELETE FROM `creature_addon` WHERE `guid` = 127599;
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES
+(127599, 0, 29260, 0, 1, 0, '63433 0 62852 0 64723 0');
+DELETE FROM `creature_addon` WHERE `guid` = 127600;
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES
+(127600, 0, 29260, 0, 1, 0, '63433 0 62852 0 64723 0');
+DELETE FROM `creature_addon` WHERE `guid` = 127601;
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES
+(127601, 0, 29259, 0, 1, 0, '63436 0 62852 0 64723 0');
+DELETE FROM `creature_addon` WHERE `guid` = 127602;
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES
+(127602, 0, 29259, 0, 1, 0, '63436 0 62852 0 64723 0');
+UPDATE `creature_template` SET `InhabitType` = 3, `equipment_id` = 33698 WHERE `entry` = 33780 ;
+DELETE FROM `creature` WHERE `guid` = 136670 ;
+DELETE FROM `creature` WHERE `guid` = 136666 ;
+DELETE FROM `creature` WHERE `guid` = 136671 ;
+DELETE FROM `creature` WHERE `guid` = 136672 ;
+DELETE FROM `creature` WHERE `guid` = 136665 ;
+DELETE FROM `creature` WHERE `guid` = 136669 ;
+DELETE FROM `creature` WHERE `guid` = 136667 ;
+DELETE FROM `creature` WHERE `guid` = 136668 ;
+UPDATE `gameobject_template` SET `flags` = 4 WHERE `entry` = 195597 ;
+DELETE FROM `gameobject` WHERE `id`=70000;
+INSERT INTO `gameobject` (`guid`,`id`,`map`,`spawnMask`,`phaseMask`,`position_x`,`position_y`,`position_z`,`orientation`,`rotation0`,`rotation1`,`rotation2`,`rotation3`,`spawntimesecs`,`animprogress`,`state`) VALUES
+(700010, 195597, 571, 1, 1, 8515.01, 831.332, 558.454, 1.5708, 0, 0, 0.707107, 0.707107, 180, 255, 1);
+UPDATE `creature_template` SET `equipment_id` = 117 WHERE `entry` = 35467 ;
+UPDATE `creature_template` SET `equipment_id` = 1026 WHERE `entry` = 35462 ;
+UPDATE `creature_template` SET `equipment_id` = 106 WHERE `entry` = 33854 ;
 
 -- Valiance Keep (Wrong spawns and added mount)
 DELETE FROM `creature` WHERE `guid` IN (103697,110384,110388,110385,110391,110386,108622,110383,103698) ;
@@ -296,3 +374,4 @@ INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `e
 
 -- Acherus
 UPDATE `gameobject_template` SET `flags` = 6553636 WHERE `entry` = 191364 ;
+-- / Eragon
