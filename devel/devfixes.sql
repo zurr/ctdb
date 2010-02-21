@@ -36,38 +36,48 @@ UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33335 ;
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127407,14398);
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (129808,14760);
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127620,14759);
-UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33746 ;
+UPDATE `creature_template` SET `npcflag` = 1 WHERE `entry` = 33746 ;
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127603,14384);
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127604,14384);
-UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33740 ;
+UPDATE `creature_template` SET `npcflag` = 1 WHERE `entry` = 33740 ;
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127605,14384);
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127606,14384);
-UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33743 ;
+UPDATE `creature_template` SET `npcflag` = 1 WHERE `entry` = 33743 ;
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127607,14384);
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127608,14384);
-UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33747 ;
+UPDATE `creature_template` SET `npcflag` = 1 WHERE `entry` = 33747 ;
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127609,14384);
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127610,14384);
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127480,13584);
-UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33738 ;
+UPDATE `creature_template` SET `npcflag` = 1 WHERE `entry` = 33738 ;
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127612,14384);
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127611,14384);
-UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33739 ;
+UPDATE `creature_template` SET `npcflag` = 1 WHERE `entry` = 33739 ;
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127593,14384);
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127594,14384);
-UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33749 ;
+UPDATE `creature_template` SET `npcflag` = 1 WHERE `entry` = 33749 ;
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127595,14384);
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127596,14384);
-UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33745 ;
+UPDATE `creature_template` SET `npcflag` = 1 WHERE `entry` = 33745 ;
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127597,14384);
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127598,14384);
-UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33744 ;
+UPDATE `creature_template` SET `npcflag` = 1 WHERE `entry` = 33744 ;
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127599,14384);
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127600,14384);
-UPDATE `creature_template` SET `npcflag` = 3 WHERE `entry` = 33748 ;
+UPDATE `creature_template` SET `npcflag` = 1 WHERE `entry` = 33748 ;
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127601,14384);
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127602,14384);
 INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (129939,13584);
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (129929,14692);
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (129516,14692);
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (129928,14692);
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127465,14761);
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127586,14779);
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127614,14751);
+UPDATE `creature_template` SET `npcflag` = 1 WHERE `entry` = 33518 ;
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127613,14335);
+UPDATE `creature_template` SET `npcflag` = 1 WHERE `entry` = 33522 ;
+INSERT INTO `npc_gossip` (npc_guid,textid) VALUES (127444,14409);
 
 -- Argent Tournament (Pennant,DND, gameobjects)
 DELETE FROM `creature_template_addon` WHERE `entry`= 33272 ;
@@ -199,6 +209,37 @@ DELETE FROM `creature` WHERE `guid` = 136665 ;
 DELETE FROM `creature` WHERE `guid` = 136669 ;
 DELETE FROM `creature` WHERE `guid` = 136667 ;
 DELETE FROM `creature` WHERE `guid` = 136668 ;
+DELETE FROM `creature` WHERE `guid` = 129086 ;
+DELETE FROM `creature` WHERE `guid` = 129084 ;
+DELETE FROM `creature` WHERE `guid` = 129081 ;
+DELETE FROM `creature` WHERE `guid` = 129082 ;
+DELETE FROM `creature` WHERE `guid` = 129083 ;
+INSERT INTO `creature` (`guid`,`id`,`map`,`spawnMask`,`phaseMask`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES
+(129086, 33780, 571, 1, 1, 0, 33698, 8509.65, 1197.48, 604.339, 0.0895271, 300, 0, 0, 50400, 11982, 0, 0),
+(129084, 33780, 571, 1, 1, 0, 33698, 8487.83, 1183.69, 604.339, 4.1414, 300, 0, 0, 50400, 11982, 0, 0),
+(129081, 33780, 571, 1, 1, 0, 33698, 8506.62, 1184.83, 604.339, 5.24252, 300, 0, 0, 50400, 11982, 0, 0),
+(129082, 33780, 571, 1, 1, 0, 33698, 8341.53, 839.959, 586.264, 5.51349, 300, 0, 0, 50400, 11982, 0, 0),
+(129083, 33780, 571, 1, 1, 0, 33698, 8341.92, 853.067, 586.264, 0.187705, 300, 0, 0, 50400, 11982, 0, 0),
+(136668, 33780, 571, 1, 1, 0, 33698, 8323.82, 835.368, 586.264, 4.40529, 300, 0, 0, 50400, 11982, 0, 0),
+(136667, 33780, 571, 1, 1, 0, 33698, 8618.38, 577.4, 586.304, 2.4575, 300, 0, 0, 50400, 11982, 0, 0),
+(136669, 33780, 571, 1, 1, 0, 33698, 8618.25, 564.399, 586.304, 3.51936, 300, 0, 0, 50400, 11982, 0, 0),
+(136665, 33780, 571, 1, 1, 0, 33698, 8636.01, 583.496, 586.304, 1.4789, 300, 0, 0, 50400, 11982, 0, 0);
+DELETE FROM `creature_addon` WHERE `guid` IN (136668,136667,136669,136665) ;
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES
+(136668, 0, 22471, 0, 1, 0, ''),
+(136667, 0, 22471, 0, 1, 0, ''),
+(136669, 0, 22471, 0, 1, 0, ''),
+(136665, 0, 22471, 0, 1, 0, '');
+DELETE FROM `creature_addon` WHERE `guid` IN (136649,136650,136651,136652,136653,136654) ;
+INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES
+(136649, 0, 0, 1, 0, 0, ''),
+(136650, 0, 0, 1, 0, 0, ''),
+(136651, 0, 0, 1, 0, 0, ''),
+(136652, 0, 0, 1, 0, 0, ''),
+(136653, 0, 0, 1, 0, 0, ''),
+(136654, 0, 0, 1, 0, 0, '');
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`) VALUES 
+(581340, 181273, 571, 1, 1, 8530.56, 647.24, 558.537, 0, 0, 0, 0, 1, 180, 255, 1);
 UPDATE `gameobject_template` SET `flags` = 4 WHERE `entry` = 195597 ;
 DELETE FROM `gameobject` WHERE `id`=70000;
 INSERT INTO `gameobject` (`guid`,`id`,`map`,`spawnMask`,`phaseMask`,`position_x`,`position_y`,`position_z`,`orientation`,`rotation0`,`rotation1`,`rotation2`,`rotation3`,`spawntimesecs`,`animprogress`,`state`) VALUES
@@ -206,6 +247,10 @@ INSERT INTO `gameobject` (`guid`,`id`,`map`,`spawnMask`,`phaseMask`,`position_x`
 UPDATE `creature_template` SET `equipment_id` = 117 WHERE `entry` = 35467 ;
 UPDATE `creature_template` SET `equipment_id` = 1026 WHERE `entry` = 35462 ;
 UPDATE `creature_template` SET `equipment_id` = 106 WHERE `entry` = 33854 ;
+UPDATE `creature_template` SET `IconName` = '' WHERE `entry` = 33788 ;
+UPDATE `creature_template` SET `InhabitType` = 3 WHERE `entry` = 30281 ;
+UPDATE `creature_template` SET `unit_flags` = 2 WHERE `entry` = 35467 ;
+UPDATE `creature_template` SET `unit_flags` = 2 WHERE `entry` = 35462 ;
 
 -- Valiance Keep (Wrong spawns and added mount)
 DELETE FROM `creature` WHERE `guid` IN (103697,110384,110388,110385,110391,110386,108622,110383,103698) ;
